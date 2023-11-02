@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDibujoArtistico.Pages.PagesAdmin.InsercionTestPage"
+             Title="InsercionTestPage">
+    <VerticalStackLayout>
+        <!-- Título de la página -->
+        <Label 
+            Text="Inserción de Pregunta"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Title" />
+
+        <!-- Campo de ingreso de la pregunta -->
+        
+        <Entry
+            x:Name="txtPregunta"
+            Placeholder="Escribe tu pregunta"
+            />
+        
+        <!-- Lista desplegable para seleccionar una evaluación -->
+        
+        <!-- Botón para guardar la pregunta -->
+        <Button x:Name="btnGuardarPregunta"
+            Text="Guardar Pregunta"
+            VerticalOptions="CenterAndExpand" 
+                Clicked="btnGuardarPregunta_Clicked"/>
+
+        <Label 
+ Text="Posibles Respuestas"
+ VerticalOptions="Center" 
+ HorizontalOptions="Center"
+ FontSize="Title" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Primera fila -->
+            <Entry
+Grid.Row="0"
+Grid.Column="0"
+x:Name="txtRespuesta1"
+Placeholder="Escribe la respuesta 1" />
+
+            <Entry
+Grid.Row="0"
+Grid.Column="1"
+x:Name="txtCorrecta1"
+Placeholder="Verdadero_falso" />
+
+            <!-- Segunda fila -->
+            <Entry
+Grid.Row="1"
+Grid.Column="0"
+x:Name="txtRespuesta2"
+Placeholder="Escribe la respuesta 2" />
+
+            <Entry
+Grid.Row="1"
+Grid.Column="1"
+x:Name="txtCorrecta2"
+Placeholder="Verdadero_falso" />
+
+            <!-- Tercera fila -->
+            <Entry
+Grid.Row="2"
+Grid.Column="0"
+x:Name="txtRespuesta3"
+Placeholder="Escribe la respuesta 3" />
+
+            <Entry
+Grid.Row="2"
+Grid.Column="1"
+x:Name="txtCorrecta3"
+Placeholder="Verdadero_falso" />
+
+            <!-- Puedes seguir agregando más filas según tus necesidades -->
+        </Grid>
+
+        <!-- Botón para agregar respuesta -->
+        <Button x:Name="btnGuardarRespuestas"
+    Text="Guardar Respuestas"
+    VerticalOptions="CenterAndExpand" 
+        Clicked="btnGuardarRespuestas_Clicked"/>
+
+        <Entry
+         x:Name="txtIdEvaluacion"
+         Placeholder="Escribe el Id de evaluacion"
+      />
+        <Button x:Name="btnGuardarEvaluacion"
+         Text="Guardar en Evaluacion"
+         VerticalOptions="CenterAndExpand"
+                Clicked="btnGuardarEvaluacion_Clicked"/>
+
+        <Button x:Name="btnBorrarDatos"
+         Text="Nuevo"
+         VerticalOptions="CenterAndExpand"
+                Clicked="btnBorrarDatos_Clicked"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

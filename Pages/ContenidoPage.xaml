@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDibujoArtistico.Pages.ContenidoPage"
+             Title="ContenidoPage"
+             >
+    
+    <Grid BackgroundColor="White" Margin="10,10,10,0">
+        
+         <Grid.Background>
+     <LinearGradientBrush StartPoint="0,0"
+                          EndPoint="1,0">
+         <GradientStopCollection>
+             <GradientStop Offset="0.3" Color="#aebeee"/>
+             <GradientStop Offset="51" Color="#3b2164"/>
+             <GradientStop Offset="1" Color="#dd94e9"/>
+         </GradientStopCollection>
+     </LinearGradientBrush>
+ </Grid.Background>
+        <Label x:Name="lblDescripcion"
+               Text=""
+               FontSize="Subtitle"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,25,0,15"/>
+
+        <Frame Margin="15,40,15,30" VerticalOptions="CenterAndExpand" BorderColor="Black" >
+            <VerticalStackLayout VerticalOptions="Center"  >
+                <Image x:Name="imgPrincipiante"
+                       HeightRequest="350"
+                       WidthRequest="350"
+                       VerticalOptions="Center"/>
+
+            </VerticalStackLayout>
+        </Frame>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End">
+
+            <Button x:Name="btnPreviousCabezas"
+                    Text="Anterior"
+                    Clicked="BtnPreviousCabezas_Clicked"/>
+
+            <Button x:Name="btnNextCabezas"
+                Text="Siguiente"
+                BackgroundColor="#74BB73"
+                Clicked="btnNextCabezas_Clicked"  />
+
+            <Button x:Name="btnEmpezarEvaluacion"
+                    Text="Empezar Examen"
+                    Clicked="btnEmpezarEvaluacion_Clicked" />
+
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

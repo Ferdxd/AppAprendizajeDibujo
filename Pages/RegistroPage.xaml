@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDibujoArtistico.Pages.RegistroPage"
+             Title="RegistroPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStopCollection>
+                        <GradientStop Offset="0.3" Color="#aebeee"/>
+                        <GradientStop Offset="51" Color="#3b2164"/>
+                        <GradientStop Offset="1" Color="#dd94e9"/>
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </Grid.Background>
+           
+            <Frame Margin="25,0,25,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="WhiteSmoke" BorderColor="Black">
+                <VerticalStackLayout>
+                    <Label FontAttributes="Bold"
+                           FontSize="Title"
+                           TextColor="Black"
+                           Text="Crear Cuenta"
+                           HorizontalOptions="Center"/>
+                    
+                    <Label FontAttributes="Bold"
+                           FontSize="Title"
+                           TextColor="Black"
+                           Text="Nombre"/>
+
+                    <Entry x:Name="txtNombre"
+                           FontAttributes="Bold"
+                           FontSize="Subtitle"
+                           TextColor="Black"
+                           BackgroundColor="White"/>
+
+                    <Label FontAttributes="Bold"
+                           FontSize="Title"
+                           TextColor="Black"
+                           Text="Apellido"/>
+
+                    <Entry x:Name="txtApellido"
+                           FontAttributes="Bold"
+                           FontSize="Subtitle"
+                           TextColor="Black"
+                           BackgroundColor="White"/>
+
+                    <Label FontAttributes="Bold"
+                           FontSize="Title"
+                           TextColor="Black"
+                           Text="Correo Electronico"/>
+                    
+                    <Entry x:Name="txtRegistrarCorreo"
+                           FontAttributes="Bold"
+                           FontSize="Subtitle"
+                           TextColor="Black"
+                           BackgroundColor="White"/>
+                    
+                    <Label FontAttributes="Bold"
+                           FontSize="Title"
+                           TextColor="Black"
+                           Text="Contraseña"/>
+
+                    <Entry x:Name="txtRegistrarContraseña"
+                           FontAttributes="Bold"
+                           FontSize="Subtitle"
+                           TextColor="Black"
+                           IsPassword="True"
+                           BackgroundColor="White"/>
+
+                    <Button x:Name="btnRegistrarse"
+                            FontAttributes="Bold"
+                            FontSize="Title"
+                            TextColor="Black"
+                            BackgroundColor="BlueViolet"
+                            Text="Crear"
+                            Clicked="btnRegistrarse_Clicked"/>
+
+
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

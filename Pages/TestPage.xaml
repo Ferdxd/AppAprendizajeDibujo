@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDibujoArtistico.Pages.TestPage"
+             Title="TestPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Offset="0.3" Color="#aebeee"/>
+                    <GradientStop Offset="51" Color="#3b2164"/>
+                    <GradientStop Offset="1" Color="#dd94e9"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Label x:Name="lblExamen"
+                   FontAttributes="Bold"
+                   FontSize="Title"
+                   TextColor="Black"
+                   Text=""/>
+            <Frame Margin="25,0,25,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BorderColor="Black">
+                <VerticalStackLayout>
+                    <Label x:Name="lblPregunta"
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        TextColor="Black"
+                        Text=""/>
+
+                    <Button x:Name="btnOpcionA"
+                            FontAttributes="Bold"
+                            FontSize="Title"
+                            BackgroundColor="#A55DDA"
+                            TextColor="Black"
+                            Text=""
+                            Clicked="btnOpcionA_Clicked"/>
+                    
+                    <Button x:Name="btnOpcionB"
+                            FontAttributes="Bold"
+                            FontSize="Title"
+                            BackgroundColor="#A55DDA"
+                            TextColor="Black"
+                            Text=""
+                            Clicked="btnOpcionB_Clicked"/>
+
+                    <Button x:Name="btnOpcionC"
+                            FontAttributes="Bold"
+                            FontSize="Title"
+                            BackgroundColor="#A55DDA"
+                            TextColor="Black"
+                            Text=""
+                            Clicked="btnOpcionC_Clicked"/>
+                    
+
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

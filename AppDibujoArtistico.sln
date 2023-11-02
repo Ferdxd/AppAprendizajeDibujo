@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDibujoArtistico", "AppDibujoArtistico\AppDibujoArtistico.csproj", "{606AF4F9-BC11-44B2-8C7D-21D438FF889D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{606AF4F9-BC11-44B2-8C7D-21D438FF889D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606AF4F9-BC11-44B2-8C7D-21D438FF889D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606AF4F9-BC11-44B2-8C7D-21D438FF889D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{606AF4F9-BC11-44B2-8C7D-21D438FF889D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606AF4F9-BC11-44B2-8C7D-21D438FF889D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606AF4F9-BC11-44B2-8C7D-21D438FF889D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E20A3A6A-739B-425B-8C96-D62CA6F03241}
+	EndGlobalSection
+EndGlobal
